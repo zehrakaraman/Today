@@ -21,7 +21,7 @@ class ReminderViewController: UICollectionViewController {
         self.reminder = reminder
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         listConfiguration.showsSeparators = false
-        var listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
+        let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
         //collectionView.collectionViewLayout = listLayout
         super.init(collectionViewLayout: listLayout)
     }
