@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0E778F294123FE005E821A /* ReminderViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E778E294123FE005E821A /* ReminderViewController+CellRegistration.swift */; };
 		FAAF7167293E66AD005FFABF /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7166293E66AD005FFABF /* ReminderDoneButton.swift */; };
 		FAAF7169293E67A3005FFABF /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7168293E67A3005FFABF /* ReminderListViewController+Actions.swift */; };
 		FAB656A1293FD41F00AFD9F4 /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB656A0293FD41F00AFD9F4 /* ReminderViewController+Row.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0E778E294123FE005E821A /* ReminderViewController+CellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+CellRegistration.swift"; sourceTree = "<group>"; };
 		FAAF7166293E66AD005FFABF /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
 		FAAF7168293E67A3005FFABF /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
 		FAB656A0293FD41F00AFD9F4 /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				FACEE9A7293E96080086289C /* ReminderViewController.swift */,
+				FA0E778E294123FE005E821A /* ReminderViewController+CellRegistration.swift */,
 				FAB656A2293FEF8B00AFD9F4 /* ReminderViewController+Section.swift */,
 				FAB656A0293FD41F00AFD9F4 /* ReminderViewController+Row.swift */,
 			);
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0E778F294123FE005E821A /* ReminderViewController+CellRegistration.swift in Sources */,
 				FAB656A3293FEF8B00AFD9F4 /* ReminderViewController+Section.swift in Sources */,
 				FABB745C293D19A4002A097A /* UIColor+Today.swift in Sources */,
 				FAAF7169293E67A3005FFABF /* ReminderListViewController+Actions.swift in Sources */,
