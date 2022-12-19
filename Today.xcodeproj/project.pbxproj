@@ -25,6 +25,7 @@
 		FABDC42E29393C0300674C9C /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDC42D29393C0300674C9C /* ReminderListViewController.swift */; };
 		FABDC43129393C3A00674C9C /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDC43029393C3A00674C9C /* Reminder.swift */; };
 		FACEE9A8293E96080086289C /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACEE9A7293E96080086289C /* ReminderViewController.swift */; };
+		FADC12B12950F6A9002CD013 /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC12B02950F6A9002CD013 /* UIContentConfiguration+Stateless.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FABDC42D29393C0300674C9C /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		FABDC43029393C3A00674C9C /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		FACEE9A7293E96080086289C /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		FADC12B02950F6A9002CD013 /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				FA0E7791294127DC005E821A /* UIView+PinnedSubview.swift */,
 				FA0E779329412EC4005E821A /* TextFieldContentView.swift */,
+				FADC12B02950F6A9002CD013 /* UIContentConfiguration+Stateless.swift */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				FAB656A3293FEF8B00AFD9F4 /* ReminderViewController+Section.swift in Sources */,
 				FABB745C293D19A4002A097A /* UIColor+Today.swift in Sources */,
 				FAAF7169293E67A3005FFABF /* ReminderListViewController+Actions.swift in Sources */,
+				FADC12B12950F6A9002CD013 /* UIContentConfiguration+Stateless.swift in Sources */,
 				FACEE9A8293E96080086289C /* ReminderViewController.swift in Sources */,
 				FABDC418293937CA00674C9C /* AppDelegate.swift in Sources */,
 				FA0E779429412EC4005E821A /* TextFieldContentView.swift in Sources */,
