@@ -1,26 +1,26 @@
 //
-//  TextFieldContentView.swift
+//  TextViewContentView.swift
 //  Today
 //
-//  Created by Zehra on 7.12.2022.
+//  Created by Zehra on 28.12.2022.
 //
 
 import UIKit
 
-class TextFieldContentView: UIView, UIContentView {
+class TextViewContentView: UIView, UIContentView {
     struct Configuration: UIContentConfiguration {
-        func updated(for state: UIConfigurationState) -> TextFieldContentView.Configuration {
+        func updated(for state: UIConfigurationState) -> TextViewContentView.Configuration {
             return self
         }
         
         var text: String? = ""
         
         func makeContentView() -> UIView & UIContentView {
-            return TextFieldContentView(self)
+            return TextViewContentView(self)
         }
     }
     
-    let textField = UITextField()
+    let textView = UITextView()
     var configuration: UIContentConfiguration {
         didSet {
             configure(configuration: configuration)
@@ -28,14 +28,15 @@ class TextFieldContentView: UIView, UIContentView {
     }
     
     override var intrinsicContentSize: CGSize {
-        CGSize(width: 44, height: 44)
+        CGSize(width: 0, height: 44)
     }
     
     init(_ configuration: UIContentConfiguration) {
         self.configuration = configuration
         super.init(frame: .zero)
-        addPinnedSubview(textField, insets: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16))
-        textField.clearButtonMode = .whileEditing
+        addPinnedSubview(textView, height: 200)
+        textView.backgroundColor = nil
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
     }
     
     required init?(coder: NSCoder) {
@@ -44,12 +45,12 @@ class TextFieldContentView: UIView, UIContentView {
     
     func configure(configuration: UIContentConfiguration) {
         guard let configuration = configuration as? Configuration else { return }
-        textField.text = configuration.text
+        textView.text = configuration.text
     }
 }
 
 extension UICollectionViewListCell {
-    func textFieldConfiguration() -> TextFieldContentView.Configuration {
-        TextFieldContentView.Configuration()
+    func textViewConfiguration() -> TextViewContentView.Configuration {
+        TextViewContentView.Configuration()
     }
 }

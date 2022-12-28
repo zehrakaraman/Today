@@ -31,7 +31,7 @@ class ReminderListViewController: UICollectionViewController {
         collectionView.dataSource = dataSource
         
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         let id = reminders[indexPath.item].id
         showDetail(for: id)
